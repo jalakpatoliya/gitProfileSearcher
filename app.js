@@ -6,7 +6,7 @@ var express               = require("express");
     passportLocalMongoose = require("passport-local-mongoose"),
     mongoose              = require("mongoose"),
     expressSession        = require("express-session"),
-    port                  = 3823;
+    port                  = process.env.PORT || 3823;
 
  
 
