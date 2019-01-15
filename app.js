@@ -51,13 +51,9 @@ app.use(searchRoute);
 //============= Home Routes===============================
 //=========================================================
 app.get("/",isLoggedIn,function(req,res){
-  res.render("search.ejs");
+  res.render("searchResults.ejs");
 })
 
-app.get("/search",isLoggedIn,function(req,res){ //
-  console.log("user is logged in so,search page is accessed");
-  res.render("search.ejs");
-})
 //=========================================================
 //=============Authenticating function=====================
 //=========================================================
